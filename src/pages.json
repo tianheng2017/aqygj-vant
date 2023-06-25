@@ -1,0 +1,49 @@
+{
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "^v-(.*)": "@/components/v-$1/v-$1.vue"
+        }
+    },
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+        {
+            "path": "pages/address-book/index",
+            "style": {
+                "navigationBarTitleText": "通讯录"
+            }
+        },
+        {
+            "path": "pages/msg/index",
+            "style": {
+                "navigationBarTitleText": "消息"
+            }
+        },
+        {
+            "path": "pages/work/index",
+            "style": {
+                "navigationBarTitleText": "工作台"
+            }
+        },
+        {
+            "path": "pages/user/index",
+            "style": {
+                "navigationBarTitleText": "我的"
+            }
+        }
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "安全云管家",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"h5": {
+			"navigationStyle": "custom"
+		}
+	}
+}
