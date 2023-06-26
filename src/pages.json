@@ -25,6 +25,12 @@
             }
         },
         {
+            "path": "pages/msg/send",
+            "style": {
+                "navigationBarTitleText": "发送消息"
+            }
+        },
+        {
             "path": "pages/work/index",
             "style": {
                 "navigationBarTitleText": "工作台"

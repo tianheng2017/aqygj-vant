@@ -1,7 +1,13 @@
 <template>
     <view class="max-w-xl m-auto">
         <van-config-provider :theme-vars="themeVars">
-            <v-nav-bar title="消息" left-text="" :left-arrow="false" />
+            <v-nav-bar 
+                title="消息" 
+                left-text="" 
+                :left-arrow="false" 
+                right-text="发送"
+                @right-func="sendMsg"
+            />
             <van-cell 
                 v-for="v in list" 
                 :value="v.value"
@@ -36,5 +42,11 @@ const list = ref([
     { id: 2, title: '设备检维修', is_read: 0, value: '2023-05-15 15:26:10' },
     { id: 3, title: '证书过期', is_read: 1, value: '2023-04-08 08:33:10' },
 ])
+
+const sendMsg = () => {
+    uni.navigateTo({
+        url: '/pages/msg/send'
+    })
+}
 
 </script>
