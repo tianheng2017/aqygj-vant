@@ -21,7 +21,6 @@ import { reactive } from 'vue'
 
 const appStore = useAppStore()
 
-
 const themeVars = reactive({
     gridItemContentBackground: '#13B55B',
     gridItemTextColor: '#fff',

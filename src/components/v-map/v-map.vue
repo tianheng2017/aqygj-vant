@@ -37,7 +37,6 @@ import { reactive } from 'vue'
 
 const appStore = useAppStore()
 
-
 const themeVars = reactive({
     buttonNormalFontSize: '15px',
     buttonSuccessBorderColor: 'rgba(0, 0, 0, 0.1)',
