@@ -1,7 +1,13 @@
 <template>
     <view class="max-w-xl m-auto">
         <v-nav-bar title="通讯录" left-text="" :left-arrow="false" />
-        <van-tabs v-model:active="active">
+        <van-tabs 
+            v-model:active="active" 
+            type="card" 
+            color="#07c160"
+            background="#fff"
+            class="my-3" 
+        >
             <van-tab title="内部通讯录" name="a" type="card">
                 <van-search v-model="value" placeholder="请在16位联系人中搜索" />
                 <van-index-bar>

@@ -28,7 +28,7 @@ defineProps({
 })
 
 const themeVars = reactive({
-    navBarBackground: '#13B55B',
+    navBarBackground: '#1c7243',
     navBarTitleTextColor: '#fff',
     navBarTextColor: '#fff',
     navBarIconColor: '#fff',
