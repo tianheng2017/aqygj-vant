@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx,vue}'],
   theme: {
@@ -35,6 +36,12 @@ module.exports = {
   plugins: [
 	  require("tailwindcss"),
 	  require("autoprefixer"),
+      plugin(function ({ addUtilities }) {
+          const newUtilities = {
+
+          }
+          addUtilities(newUtilities, ['responsive'])
+      })
   ],
   corePlugins: {
 	  preflight: false

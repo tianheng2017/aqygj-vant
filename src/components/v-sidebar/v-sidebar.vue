@@ -5,7 +5,8 @@
                 v-for="(currentGridItem, index) in appStore.currentGrid.children" 
                 :title="currentGridItem.title"
                 :key="currentGridItem.id"
-                 @click="appStore.subMenuClick(currentGridItem, index)"
+                @click="appStore.subMenuClick(currentGridItem, index)"
+                replace
             />
         </van-sidebar>
     </van-config-provider>
