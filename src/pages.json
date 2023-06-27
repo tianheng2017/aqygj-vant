@@ -41,6 +41,42 @@
             "style": {
                 "navigationBarTitleText": "我的"
             }
+        },
+        {
+            "path": "pages/enterprise/train/id101",
+            "style": {
+                "navigationBarTitleText": "培训计划"
+            }
+        },
+        {
+            "path": "pages/enterprise/train/id102",
+            "style": {
+                "navigationBarTitleText": "安全常识"
+            }
+        },
+        {
+            "path": "pages/enterprise/train/id103",
+            "style": {
+                "navigationBarTitleText": "三级培训"
+            }
+        },
+        {
+            "path": "pages/enterprise/train/id104",
+            "style": {
+                "navigationBarTitleText": "应知应会"
+            }
+        },
+        {
+            "path": "pages/enterprise/train/id105",
+            "style": {
+                "navigationBarTitleText": "案例分析"
+            }
+        },
+        {
+            "path": "pages/enterprise/train/id106",
+            "style": {
+                "navigationBarTitleText": "考试系统"
+            }
         }
 	],
 	"globalStyle": {

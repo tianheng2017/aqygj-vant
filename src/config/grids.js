@@ -8,12 +8,12 @@ const enterprise = [
         icon: 'todo-list-o',
         title: '教育培训',
         children: [
-            { id: 101, title: '培训计划' },
-            { id: 102, title: '安全常识' },
-            { id: 103, title: '三级培训' },
-            { id: 104, title: '应知应会' },
-            { id: 105, title: '案例分析' },
-            { id: 106, title: '考试系统' },
+            { id: 101, title: '培训计划', url: '/pages/enterprise/train/id101' },
+            { id: 102, title: '安全常识', url: '/pages/enterprise/train/id102' },
+            { id: 103, title: '三级培训', url: '/pages/enterprise/train/id103' },
+            { id: 104, title: '应知应会', url: '/pages/enterprise/train/id104' },
+            { id: 105, title: '案例分析', url: '/pages/enterprise/train/id105' },
+            { id: 106, title: '考试系统', url: '/pages/enterprise/train/id106' },
         ]
     },
     {

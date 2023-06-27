@@ -5,7 +5,7 @@
             :left-text="leftText" 
             :left-arrow="leftArrow" 
             :right-text="rightText"
-            @click-left="onClickLeft" 
+            @click-left="onClickLeft(backUrl)" 
             @click-right="onClickRight" 
         />
     </van-config-provider>
@@ -37,13 +37,24 @@ defineProps({
     rightText: {
         type: String,
         default: ''
-    }
+    },
+    backUrl: {
+        type: String,
+        default: ''
+    },
 })
 
 const emits = defineEmits(['right-func'])
 
-const onClickLeft = () => {
-    uni.navigateBack()
+// 返回按钮事件
+const onClickLeft = (backUrl) => {
+    if (backUrl) {
+        uni.navigateTo({
+            url: backUrl
+        })
+    } else {
+        uni.navigateBack()
+    }
 }
 
 const onClickRight = () => {

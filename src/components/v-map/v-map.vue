@@ -18,11 +18,12 @@
             </van-row>
             <van-row justify="start">
                 <van-col 
-                    v-for="currentGridItem in appStore.currentGrid.children"
+                    v-for="(currentGridItem, index) in appStore.currentGrid.children"
                     :key="currentGridItem.id"
                     span="8" 
                     :gutter="15"
                     class="mt-3"
+                    @click="appStore.subMenuClick(currentGridItem, index)"
                 >
                     <van-button block type="success" size="normal">{{ currentGridItem.title }}</van-button>
                 </van-col>

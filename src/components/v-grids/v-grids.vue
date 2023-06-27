@@ -33,6 +33,7 @@ const gridEvent = (gridsItem) => {
     // 如果存在子菜单，则隐藏地图显示子菜单，否则显示地图
     if (gridsItem.children.length) {
         appStore.showMap = false
+        appStore.currentGrid.id = gridsItem.id
         appStore.currentGrid.title = gridsItem.title
         appStore.currentGrid.children = gridsItem.children
     } else {
